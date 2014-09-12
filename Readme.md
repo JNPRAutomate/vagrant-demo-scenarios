@@ -5,6 +5,7 @@
 According to RFC5737 it specifies several IP address blocks that can be used in documentation scenarios. These blocks allow us to create network topologies that do not interfer with any other existing networks or virtual networks on a host PC.
 
 These three blocks are:
+
 1. TEST-NET-1
 ..* 192.0.2.0/24
 2. TEST-NET-2
