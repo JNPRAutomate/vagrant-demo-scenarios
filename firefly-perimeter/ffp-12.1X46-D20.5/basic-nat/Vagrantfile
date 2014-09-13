@@ -26,16 +26,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   config.vm.define "FFP" do |ubuntu|
-    ubuntu.vm.box = "juniper/ffp-12.1X46-D20.5"
-    ubuntu.vm.network "private_network",
-      ip: "dhcp",
-      virtualbox__intnet: "mgmt"
+    ubuntu.vm.box = "miffp"
     ubuntu.vm.network "private_network",
       ip: "192.0.2.1",
-      virtualbox__intnet: "neta"
+      virtualbox__intnet: "neta",
+      nic_type: 'virtio'
     ubuntu.vm.network "private_network",
       ip: "192.51.100.1",
-      virtualbox__intnet: "netb"
+      virtualbox__intnet: "netb",
+      nic_type: 'virtio'
     config.vm.synced_folder "", "/vagrant", disabled: true
   end
 end
