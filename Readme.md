@@ -17,8 +17,8 @@ These three blocks are:
 
 For all topologies and demos these blocks will be utilized. Scenarios will typically include only two seperate networks. However there may be cases when you need three or more. Once the 3 test nets are exhausted then you can subdivide the networks into smaller subnets. Below are some example topologies.
 
-Topology Naming
-===============
+Defined Topology Types
+======================
 
 Basic three host network topology
 ---------------------------------
